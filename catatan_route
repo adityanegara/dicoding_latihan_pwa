@@ -1,0 +1,18 @@
+1)  Ada event listener yang mendengar perubahan halaman berubah pada index.js
+
+    window.addEventListener('hashchange', ()=>{
+        app.renderPage();
+    });
+
+2) Memanggilkan class App fungsi renderPage yang berfungsi mengubah konten main menjadi halaman
+   yang ingin di render.
+
+3) UrlParser.parseActiveUrlWithCombiner berfungsi untuk memotong UrlParser
+   dari http://localhost:8080/#/now-playing menjadi /now-playing
+
+4) urlSplitter(url) berfungsi untuk memotong url bila url 
+    /detail/3 maka akan membuat objek
+    {resource: "detail", id: "3", verb: null}
+
+    /nowplaying
+    {resource: "now-playing", id: null, verb: null}
