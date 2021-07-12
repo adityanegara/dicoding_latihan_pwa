@@ -5,8 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start-dev" : "webpack-dev-server --config webpack.dev.js",
-    "build" : "webpack --config webpack.prod.js"
+    "start-dev": "webpack-dev-server --config webpack.dev.js",
+    "build": "webpack --config webpack.prod.js"
   },
   "author": "Aditya Negara",
   "license": "ISC",
@@ -27,6 +27,7 @@
     "webpack-merge": "^5.0.9"
   },
   "dependencies": {
-    "regenerator-runtime": "^0.13.5"
+    "regenerator-runtime": "^0.13.5",
+    "serviceworker-webpack-plugin": "^1.0.1"
   }
 }
